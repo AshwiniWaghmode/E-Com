@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">-->
+    <title>Products</title>
+
+    <link href={% static 'css/category.css' %} rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p>E-Market</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="art">ART</a></li>
+                <li><a href="#">CRAFT</a></li>
+                <li><a href="#">CROCKERY</a></li>
+                <div class="dropdown">
+                    <li>
+                    <a class="nav-link" href="">HOME_DECOR</a>
+                    </li>
+
+                    <div class="dropdown-content">
+                      <a href="#">24*7 Customer Care</a>
+                      <a href="#">Suggestion</a>
+                      <a href="#">Offer</a>
+                    </div>
+                  </div>
+                <li><a href="#">JWELLARY</a></li>
+                <li><a href="#">PAINTING</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="container">
+          <div class="jumbotron jumbotron_style">
+              <h1>Welcome to our Tribal store!</h1>
+              <p>Art Section</p>
+
+          </div>
+          <div class="padding-30"></div>
+          <div class="row text-center">
+              <div class="col-md-3 col-sm-6">
+                  <div class="thumbnail">
+                      <img src={%static 'img/art/a1.jpg'%} alt="painting">
+                      <div class="caption">
+                          <h3>Art </h3>
+                          
+                          <button class="">add-to-cart</button>
+                          <button class="">Wishlist</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 ">
+                  <div class="thumbnail">
+                      <img src={%static 'img/art/a2.jpg'%} alt="">
+                      <div class="caption">
+                          <h3>Crafts</h3>
+                          
+                          <button class="">add-to-cart</button>
+                          <button class="">Wishlist</button>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6 ">
+                  <div class="thumbnail">
+                      <img src={%static 'img/art/a3.jpg'%} alt="cannon">
+                      <div class="caption">
+                          <h3>Crockery</h3>
+                          
+                          <button class="">add-to-cart</button>
+                          <button class="">Wishlist</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 ">
+                  <div class="thumbnail">
+                      <img src={%static 'img/art/a4.jpg'%} alt="Panasonic">
+                      <div class="caption">
+                          <h3>Home_Decor</h3>
+                          
+                          <button class="">add-to-cart</button>
+                          <button class="">Wishlist</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row text-center">
+              <div class="col-md-3 col-sm-6">
+                  <div class="thumbnail">
+                      <img src={%static 'img/art/a5.jpg'%}>
+                      <div class="caption">
+                          <h3>Jwellary</h3>
+                          
+                          <button class="">add-to-cart</button>
+                          <button class="">Wishlist</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 ">
+                  <div class="thumbnail">
+                      <img src={%static 'img/art/a6.jpg'%}>
+                      <div class="caption">
+                          <h3>Paintings</h3>
+                          
+                          <button class="">add-to-cart</button>
+                          <button class="">Wishlist</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="padding-20"></div>
+          <div class="row text-center">
+              <div class="col-md-3 col-sm-6">
+                  <div class="thumbnail">
+                      <img src={%static 'img/art/a7.jpg'%} alt="painting">
+                      <div class="caption">
+                          <h3>Art </h3>
+                          
+                          <button class="">add-to-cart</button>
+                          <button class="">Wishlist</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="padding-20"></div>
+          <div class="row text-center">
+              <div class="col-md-3 col-sm-6">
+                  <div class="thumbnail">
+                      <img src={%static 'img/art/a8.jpg'%} alt="painting">
+                      <div class="caption">
+                          <h3>Art </h3>
+                          
+                          <button class="">add-to-cart</button>
+                          <button class="">Wishlist</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="padding-20"></div>
+          <div class="row text-center">
+              <div class="col-md-3 col-sm-6">
+                  <div class="thumbnail">
+                      <img src={%static 'img/art/a9.jpg'%} alt="painting">
+                      <div class="caption">
+                          <h3>Art </h3>
+                          
+                          <button class="">add-to-cart</button>
+                          <button class="">Wishlist</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="padding-20"></div>
+          <div class="row text-center">
+              <div class="col-md-3 col-sm-6">
+                  <div class="thumbnail">
+                      <img src={%static 'img/art/a10.jpg'%} alt="painting">
+                      <div class="caption">
+                          <h3>Art </h3>
+                          
+                          <button class="">add-to-cart</button>
+                          <button class="">Wishlist</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="padding-20"></div>
+          <div class="row text-center">
+              <div class="col-md-3 col-sm-6">
+                  <div class="thumbnail">
+                      <img src={%static 'img/art/a11.jpg'%} alt="painting">
+                      <div class="caption">
+                          <h3>Art </h3>
+                          
+                          <button class="">add-to-cart</button>
+                          <button class="">Wishlist</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="padding-20"></div>
+          <div class="row text-center">
+              <div class="col-md-3 col-sm-6">
+                  <div class="thumbnail">
+                      <img src={%static 'img/art/a12.jpg'%} alt="painting">
+                      <div class="caption">
+                          <h3>Art </h3>
+                          
+                          <button class="">add-to-cart</button>
+                          <button class="">Wishlist</button>
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="padding-50"></div>
+        </div>
+
+              
+  </main>
+    <footer>
+        <div class="container">
+            <center>
+                Copyright © Lifestyle Store. All Rights Reserved and Contact Us: +91 90000 00000
+            </center>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
