@@ -44,3 +44,6 @@ def art(request):
 
 def craft(request):
     return render(request,'craft.html')
+
+def earring(request):
+    return render(request,'earring.html')

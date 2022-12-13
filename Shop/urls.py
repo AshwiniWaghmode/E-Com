@@ -12,5 +12,6 @@ urlpatterns = [
     path('popup',views.popup,name="popup"),
     path('v_home',views.v_home,name="v_home"),
     path('art',views.art,name="art"),
-    path('craft',views.craft,name="craft")
+    path('craft',views.craft,name="craft"),
+    path('earring',views.earring,name="earring")
 ]
