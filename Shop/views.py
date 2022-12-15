@@ -18,7 +18,7 @@ def register(request):
         messages.success(request, 'your msg has been sent....!')
         
     
-    #return render(request, 'register.html')
+    return render(request, 'register.html')
 
 def login(request):
     return render(request,'login.html')
@@ -42,8 +42,29 @@ def v_home(request):
 def art(request):
     return render(request,'art.html')
 
+def painting(request):
+    return render(request,'painting.html')
+
 def craft(request):
     return render(request,'craft.html')
 
 def earring(request):
     return render(request,'earring.html')
+
+def necklace(request):
+    return render(request,'necklace.html')
+
+def other(request):
+    return render(request,'otherj.html')
+
+def plates(request):
+    return render(request,'plates.html')
+
+def bowls(request):
+    return render(request,'bowls.html')
+
+def wooden(request):
+    return render(request,'wooden.html')
+
+def vendorregi(request):
+    return render(request,'vendor_regi.html')

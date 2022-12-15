@@ -13,5 +13,13 @@ urlpatterns = [
     path('v_home',views.v_home,name="v_home"),
     path('art',views.art,name="art"),
     path('craft',views.craft,name="craft"),
-    path('earring',views.earring,name="earring")
+    path('earring',views.earring,name="earring"),
+    path('necklace',views.necklace,name="necklace"),
+    path('other',views.other,name="other"),
+    path('vendor_regi',views.vendorregi,name="vendor_regi"),
+    path('painting',views.painting,name="painting"),
+    path('plates',views.plates,name="plates"),
+    path('bowls',views.bowls,name="bowls"),
+    path('wooden',views.wooden,name="wooden"),
+    path('other',views.other,name="other")
 ]
