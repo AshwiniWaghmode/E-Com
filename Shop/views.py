@@ -12,8 +12,8 @@ def register(request):
         Name=request.POST.get('Name')
         Email=request.POST.get('Email')
         password=request.POST.get('password')
-        C_pass=request.POST.get('C_pass')
-        register=Register(Name=Name,Email=Email,password=password,C_pass=C_pass)
+        
+        register=Register(Name=Name,Email=Email,password=password)
         register.save()
         messages.success(request, 'your msg has been sent....!')
         
