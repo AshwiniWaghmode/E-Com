@@ -1,7 +1,9 @@
-from django.shortcuts import render,HttpResponse
+from django.shortcuts import render,HttpResponse, redirect
 from django.contrib import messages
+from django.contrib.auth import authenticate
+from django.contrib.auth import login as dj_login
 from Shop.models import Register
-
+import re
 
 def index(request):
     return render(request, 'home.html')
@@ -9,7 +11,7 @@ def index(request):
 
 def register(request):
     if request.method == "POST" :
-        Name=request.POST.get('Name')
+        Name=request.POST.get('Name')            
         Email=request.POST.get('Email')
         password=request.POST.get('password')
         
@@ -21,6 +23,16 @@ def register(request):
     return render(request, 'register.html')
 
 def login(request):
+    #return render(request,'login.html')
+    if request.method =='POST':
+        # get the post parameters
+        loginuname = request.POST["loginuname"]
+        loginpassword1=request.POST["loginpassword1"]
+        #user = authenticate(Email=loginuname, password=loginpassword1)
+        if loginuname==Email and loginpassword1==password:
+            messages.success (request,"successfully logged in ")
+        else:
+            messages.success(request,"something wrong try again later")
     return render(request,'login.html')
 
 def about(request):
