@@ -21,5 +21,7 @@ urlpatterns = [
     path('plates',views.plates,name="plates"),
     path('bowls',views.bowls,name="bowls"),
     path('wooden',views.wooden,name="wooden"),
-    path('other',views.other,name="other")
+    path('other',views.other,name="other"),
+    path('custhome',views.custhome,name="custhome"),
+    path('v_faq',views.faq,name="faq")
 ]

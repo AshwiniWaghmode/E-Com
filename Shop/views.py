@@ -80,3 +80,9 @@ def wooden(request):
 
 def vendorregi(request):
     return render(request,'vendor_regi.html')
+
+def custhome(request):
+    return render(request,'app/custhome.html')
+
+def faq(request):
+    return render(request,'v_faq.html')
