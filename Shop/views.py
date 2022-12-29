@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as dj_login
 from Shop.models import Register
+from Shop.models import Contact
 import re
 
 def index(request):
@@ -40,7 +41,18 @@ def about(request):
 
 
 def contact(request):
-    return render(request, 'contact.html')
+    #return render(request, 'contact.html')
+    if request.method == "POST":
+        Name = request.POST.get("Name")
+        Email = request.POST.get("Email")
+        Subject = request.POST.get("Subject")
+        Message = request.POST.get("Message")
+        contact = Contact(Name=Name,Email=Email,Subject=Subject,Message=Message)
+        contact.save()
+        messages.success(request, 'your msg has been sent....!')
+        
+    return render(request , "contact.html")
+    
 
 def category(request):
     return render(request,'category.html')

@@ -1,12 +1,10 @@
 
- .banner-image
- {
-  padding-top: 75px;    
+ .banner-image{ padding-top: 75px;    
   padding-bottom: 50px; 
   text-align: center;     
   color: #f8f8f8; 
-  background:("static/img/other/img3.jpg") no-repeat center ; 
-  background-size : cover;
+  background: url(blankets.jpg) no-repeat center ; 
+  background-size: cover;
 }
 
 .banner-content{
