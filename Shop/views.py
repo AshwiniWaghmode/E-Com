@@ -78,7 +78,7 @@ def earring(request):
 def necklace(request):
     return render(request,'necklace.html')
 
-def other(request):
+def otherj(request):
     return render(request,'otherj.html')
 
 def plates(request):
@@ -98,3 +98,6 @@ def custhome(request):
 
 def faq(request):
     return render(request,'v_faq.html')
+
+def other(request):
+    return render(request,'other.html')

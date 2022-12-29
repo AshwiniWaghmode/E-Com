@@ -15,7 +15,7 @@ urlpatterns = [
     path('craft',views.craft,name="craft"),
     path('earring',views.earring,name="earring"),
     path('necklace',views.necklace,name="necklace"),
-    path('other',views.other,name="other"),
+    path('otherj',views.otherj,name="other_jwellary"),
     path('vendor_regi',views.vendorregi,name="vendor_regi"),
     path('painting',views.painting,name="painting"),
     path('plates',views.plates,name="plates"),
@@ -23,5 +23,6 @@ urlpatterns = [
     path('wooden',views.wooden,name="wooden"),
     path('other',views.other,name="other"),
     path('custhome',views.custhome,name="custhome"),
-    path('v_faq',views.faq,name="faq")
+    path('v_faq',views.faq,name="faq"),
+    path('other',views.other,name="other_homedecor")
 ]
