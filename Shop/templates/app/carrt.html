@@ -1,0 +1,429 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Wooden Crockery</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<style>
+
+    header{
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        background: #000;
+      }
+      .logo{
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+      }
+      nav li{
+        display: inline-block;
+        list-style: none;
+        padding: 0px 20px;
+      }
+      a,button{
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      button{
+        background: rgba(0,0,0,0.2);
+        border: 2px ;
+        border-radius: 50px;
+        padding: 9px 25px;
+      
+      }
+      nav li a:hover{
+        color: #fd5e53;
+        transition: all 0.4s ease 0s;
+      }
+      button:hover{
+        background-color: #fd5e53;
+        transition: all 0.4s ease 0s;
+      }
+      
+       .banner-image{ padding-top: 75px;    
+          padding-bottom: 50px; 
+          text-align: center;     
+          color: #f8f8f8; 
+          background: url("static/img/other/img2.jpg") no-repeat center ; 
+          background-size: cover;
+      }
+      
+      .banner-content{
+      position:relative; 
+      padding-top: 6%; 
+      padding-bottom: 6%; 
+      margin-top: 12%; 
+      margin-bottom: 12%; 
+      background-color: rgba(0, 0, 0, 0.7); 
+      max-width: 660px;
+      overflow: hidden;
+      }
+      
+      
+      .thumbnail img{
+      max-height: 250px; 
+      }
+      main {
+      min-height: 100vh;
+      }
+      
+      footer{
+      padding: 10px 0; 
+      background-color: #101010; 
+      color:#9d9d9d; 
+      bottom: 0; 
+      width: 100%; }
+      .row_style{margin-top: 70px;
+      }
+      h2{font-weight: bolder; 
+      }
+      .jumbotron_style{margin-top: 70px;
+      }
+      .table_style{margin-top: 70px;
+      }
+      h4{font-weight: bolder;
+      }
+      .container_style{margin-top: 80px;
+      }
+      
+      .add-to-cart {
+      margin: 0;
+      background-color: #337ab7;
+      color: #ffffff;
+      border: 1px solid cyan;
+      border-radius: 4px;
+      outline: none;
+      padding: 6px 12px;
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: 400;
+      }
+      .padding-20 {
+      padding: 30px;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }   
+      
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <p>E-Market</p>
+        </div>
+        <nav>
+            <ul>
+            
+                <li><a href="craft">CRAFT</a></li>
+                <div class="dropdown">
+                    <li>
+                    <a class="nav-link" href="">CROCKERY</a>
+                    </li>
+
+                    <div class="dropdown-content">
+                      <a href="plates">PLATES</a>
+                      <a href="bowls">BOWLS</a>
+                      <a href="wooden">WOODEN</a>
+                    </div>
+                  </div>
+                <div class="dropdown">
+                    <li>
+                    <a class="nav-link" href="">HOME_DECOR</a>
+                    </li>
+
+                    <div class="dropdown-content">
+                      <a href="art">ART</a>
+                      <a href="painting">PAINTING</a>
+                      <a href="other">OTHER</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <li>
+                    <a class="nav-link" href="">JWELLARY</a>
+                    </li>
+
+                    <div class="dropdown-content">
+                      <a href="earring">EARRINGS</a>
+                      <a href="necklace">NECKLACE</a>
+                      <a href="otherj">OTHER</a>
+                    </div>
+                  </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="jumbotron jumbotron_style">
+                <h1>Art</h1>
+                
+            </div>
+            <div class="padding-20"></div>
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src={%static 'img/art/a1.jpg'%} alt="">
+                        <div class="caption">
+                            
+                            <p>Rs.220.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="add-to-cart">Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="thumbnail">
+                        <img src={%static 'img/art/a2.jpg'%} alt="">
+                        <div class="caption">
+                            
+                            <p>Rs.200.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="add-to-cart">Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="thumbnail">
+                        <img src={%static 'img/art/a3.jpg'%} alt="">
+                        <div class="caption">
+                            
+                            <p>Rs.300.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="add-to-cart">Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="thumbnail">
+                        <img src={%static 'img/art/a4.jpg'%} alt="">
+                        <div class="caption">
+                            
+                            <p>Rs.100.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="add-to-cart">Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src={%static 'img/art/a5.jpg'%} alt="">
+                        <div class="caption">
+                            
+                            <p>Rs.400.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="add-to-cart">Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="thumbnail">
+                        <img src={%static 'img/art/a6.jpg'%}>
+                        <div class="caption">
+                            
+                            <p>Rs.150.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="add-to-cart">Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="thumbnail">
+                        <img src={%static 'img/art/a7.jpg'%} alt="">
+                        <div class="caption">
+                            
+                            <p>Rs.500.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="add-to-cart">Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="thumbnail">
+                        <img src={%static 'img/art/a8.jpg'%} alt="">
+                        <div class="caption">
+                            
+                            <p>Rs.290.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="add-to-cart">Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src={%static 'img/art/a9.jpg'%} alt="">
+                        <div class="caption">
+                            
+                            <p>Rs 200.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="add-to-cart">Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="thumbnail">
+                        <img src={%static 'img/art/a10.jpg'%} alt="">
+                        <div class="caption">
+                            
+                            <p>Rs.500.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="add-to-cart">Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnail">
+                            <img src={%static 'img/art/a11.jpg'%} alt="">
+                            <div class="caption">
+                                
+                                <p>Rs 200.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="add-to-cart">Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="thumbnail">
+                            <img src={%static 'img/art/a12.jpg'%} alt="">
+                            <div class="caption">
+                                
+                                <p>Rs.500.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="add-to-cart">Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="thumbnail">
+                                <img src={%static 'img/art/a13.jpg'%} alt="">
+                                <div class="caption">
+                                    
+                                    <p>Rs 200.00</p>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="add-to-cart">Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-3 col-sm-6 ">
+                            <div class="thumbnail">
+                                <img src={%static 'img/art/a14.jpg'%} alt="">
+                                <div class="caption">
+                                    
+                                    <p>Rs.500.00</p>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="add-to-cart">Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row text-center">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="thumbnail">
+                                    <img src={%static 'img/art/a15.jpg'%} alt="">
+                                    <div class="caption">
+                                        
+                                        <p>Rs 200.00</p>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                        <button class="add-to-cart">Wishlist</button>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-md-3 col-sm-6 ">
+                                <div class="thumbnail">
+                                    <img src={%static 'img/art/a16.jpg'%} alt="">
+                                    <div class="caption">
+                                        
+                                        <p>Rs.500.00</p>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                        <button class="add-to-cart">Wishlist</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 ">
+                                <div class="thumbnail">
+                                    <img src={%static 'img/art/a17.jpg'%} alt="">
+                                    <div class="caption">
+                                        <h3>Vase Set</h3>
+                                        <p>Rs.500.00</p>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                        <button class="add-to-cart">Wishlist</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                
+    </main>
+    <footer>
+        <div class="container">
+            <center>
+             Copyright © Lifestyle Store. All Rights Reserved and Contact Us: +91 9881307106,91 82372 70889,+91 87934 97525
+            </center>
+        </div>
+    </footer>
+
+</body>
+
+</html>

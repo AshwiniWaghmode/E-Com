@@ -24,5 +24,16 @@ urlpatterns = [
     path('other',views.other,name="other"),
     path('custhome',views.custhome,name="custhome"),
     path('v_faq',views.faq,name="faq"),
-    path('other',views.other,name="other_homedecor")
+    path('other',views.other,name="other_homedecor"),
+    path('art',views.art,name="art"),
+    path('ccraft',views.ccraft,name="craft"),
+    path('cearring',views.cearring,name="earring"),
+    path('cnecklace',views.cnecklace,name="necklace"),
+    path('cotherj',views.cotherj,name="other_jwellary"),
+    path('cpainting',views.cpainting,name="painting"),
+    path('cplate',views.cplate,name="plates"),
+    path('cbowls',views.cbowls,name="bowls"),
+    path('cwooden',views.cwooden,name="wooden"),
+    path('cother',views.cotherh,name="other"),
+    path('c-category',views.cuscategory,name="category"),
 ]

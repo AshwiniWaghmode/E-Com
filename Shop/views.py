@@ -23,15 +23,23 @@ def register(request):
     
     return render(request, 'register.html')
 
+# testing of ligin
+def get(request):
+    return render(request, 'custhome.html')
+
 def login(request):
     #return render(request,'login.html')
     if request.method =='POST':
         # get the post parameters
         loginuname = request.POST["loginuname"]
         loginpassword1=request.POST["loginpassword1"]
+        mydata = Register.objects.filter(Email=loginuname).values()
+        
         #user = authenticate(Email=loginuname, password=loginpassword1)
-        if loginuname==Email and loginpassword1==password:
-            messages.success (request,"successfully logged in ")
+        if loginuname==mydata.Email and loginpassword1==mydata.Password:
+            #messages.success (request,"successfully logged in ")
+            # return render(request,'custhome.html')
+            return redirect(get)
         else:
             messages.success(request,"something wrong try again later")
     return render(request,'login.html')
@@ -101,3 +109,36 @@ def faq(request):
 
 def other(request):
     return render(request,'other.html')
+
+def cuscategory(request):
+    return render(request,'app/c-category.html')
+
+def cart(request):
+    return render(request,'app/carrt.html')
+
+def cpainting(request):
+    return render(request,'app/cpainting.html')
+
+def ccraft(request):
+    return render(request,'app/ccraft.html')
+
+def cearring(request):
+    return render(request,'app/cearring.html')
+
+def cnecklace(request):
+    return render(request,'app/cnecklace.html')
+
+def cotherj(request):
+    return render(request,'app/cotherj.html')
+
+def cplate(request):
+    return render(request,'app/cplate.html')
+
+def cbowls(request):
+    return render(request,'app/cbowls.html')
+
+def cwooden(request):
+    return render(request,'app/cwooden.html')
+
+def cotherh(request):
+    return render(request,'app/cotherh.html')
